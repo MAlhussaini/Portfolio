@@ -1,0 +1,320 @@
+body {
+    font: 16px 'Oswald', sans-serif; 
+    background: #fff;
+    color: #eee;
+    padding: 0;
+    margin: 0;
+}
+
+/* Main container */
+
+.container{
+    width: 100%;
+}
+
+/* Header section */
+
+.header {
+    display:flex;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    background: linear-gradient(60deg, #1b1919, #352d2d);
+    transition: 200ms;
+}
+
+/* Small header(scrolled down) */
+
+.header-small {
+    height: 10vh;
+    position: fixed;
+    top: 0;
+}
+
+.title {
+    width: 70%;
+    height: 10vh;
+    text-transform: uppercase;
+    color: #eee;
+    font-size: 2em;
+    text-align: left;
+    margin: 2.5vh 0 0 2.5vh;
+    
+}
+
+/* Title shown on small header(scrolled down) */
+
+.title-small {
+    width: 30%;
+    order: 0;
+}
+
+.description {
+    width: 100%;
+    font-size: 10vw;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+    text-shadow: 5px 5px #2269bb;
+}
+
+/* Description show on small header(scrolled down) */
+
+.description-small {
+    width: calc(40% - 40px);
+    order: 1;
+    font-size: 2.5em;
+    margin: 20px 0 0 20px;
+}
+
+.firstname-bg {
+    background-color: #2269bb;
+    padding: 0 5px;
+}
+
+.lastname-bg {
+    color: #333;
+    background-color: white;
+    padding: 0 5px;
+}
+
+.info {
+    font-size: 1.2em;
+    width: 100%;
+    margin: 0 25% auto;
+    text-align: center;
+}
+
+.info-noshow {
+    display: none;
+}
+
+.skills {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skills-noshow {
+    display: none;
+}
+
+.skills ul {
+    width: 80%;
+    list-style: none;
+    display: block;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.skills li {
+    display: inline;
+}
+
+/* Navigation section */
+
+.nav {
+    position: relative;
+    width: calc(30% - 5vh);
+    height: 10vh;
+    margin: 2.5vh 0 0 2.5vh;   
+}
+
+/* navigation shown on small header(scrolled down) */
+
+.nav-small { 
+    order: 2;
+}
+
+#main-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#main-menu li {
+    display: inline;
+}
+
+/* Menu for mobiles, not shown on regular screens */
+
+.menu-small {
+    display: none;
+}
+
+.menu-icon-small {
+    display: none;
+}
+
+.menu-item {
+    font-size: 1.3em;
+    display: inline-block;
+    padding: 20px;
+    color: #eee;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-item:hover {
+    color: #333;
+    background: white;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+/* Main content section */
+
+.main {
+    margin: 0 auto;
+    width: 80%;
+    color: #222;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 110vh;
+}
+
+.main-title {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 200px;
+}
+
+.main-item {
+    width: calc(33% - 20px);
+    padding: 10px;
+}
+
+.main-item-text {
+    font-family: Helvetica, sans-serif;
+}
+
+.main-item-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.main-item a {
+    color: #2269bb;
+    text-decoration: none;
+}
+
+.main-item a:hover {
+    color: #222;
+    text-decoration: underline;
+}
+
+/* Graphic design part of the main section */
+
+.logo {
+    width: 100%;
+    text-align: center;
+}
+
+.logo-images {
+    display: inline;
+    margin: 0 10px;
+}
+
+/* Footer section */
+
+#footer {
+    width: 100%;
+    margin: 0;
+    color: #222;
+    text-align: center;
+    border-top: #eee 1px solid;
+}
+
+@media screen and (max-width: 750px){
+    .title {
+        width: 60vw;
+        font-size: 2.5vh;
+    }
+    
+    .title-small {
+        width: 60vw;
+    }
+    
+    .description {
+        font-size: 10vh;
+    }
+    
+    .description-small {
+        display: none;
+        font-size: 1.5em;
+    }
+
+    .menu-icon-small {
+        text-align: right;
+        display: block;
+        width: 100%;
+        height: 40%;
+        cursor: pointer;
+    }
+
+    .menu-icon-small img {
+        width: 5vh;
+    }
+
+    .menu-small {
+        background: #1b1919e3;
+        width: 100%;
+        display: block;
+        position: absolute;
+        margin-top: 10vh;
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    .menu-small a {
+        width: 100%;
+        display: inline-block;
+        padding: 3vh 0;
+        font-size: 1.75em;
+        color: #eee;
+        text-decoration: none;
+    }
+
+    .menu-small a:hover {
+        text-decoration: underline;
+        color: #222;
+        background: #eee;
+    }
+    
+    .info {
+        margin: 0 10% auto;
+        font-size: 2.5vh;
+    }
+    
+    .info a {
+        padding: 20px;
+    }
+
+    .skills {
+        font-size: 2.5vh;
+    }
+
+    #main-menu {
+        display: none;
+    }
+
+    .main {
+        width: calc(100% - 20px);
+        display: block;
+        margin: 0 10px;
+    }
+    
+    .main-item {
+        width: 100%;
+        padding: 0;
+        margin: 10px 0;
+        border-bottom: #ddd 1px solid;
+    }
+}
