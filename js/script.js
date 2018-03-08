@@ -15,7 +15,6 @@
         console.log($(".menu-small").length)
         $(".header").append("<ul class='menu-small'>");
         $(".menu-small").append("<li><a href='/projects/portfolio'>HOME</a></li>");
-        $(".menu-small").append("<li><a href='#'>CV</a></li>");
         $(".menu-small").append("<li><a href='https://www.emares.ro/despre-mine/'>About</a></li>");
         $(".header").append("</ul>");
       }else {
