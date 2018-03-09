@@ -114,6 +114,11 @@ body {
     display: inline;
 }
 
+.icon {
+    height: 5vw;
+    max-height: 5vh;
+}
+
 /* Navigation section */
 
 .nav {
@@ -219,6 +224,8 @@ body {
 .logo-images {
     display: inline;
     margin: 0 10px;
+    height: 10vw;
+    max-height: 15vh;
 }
 
 /* Footer section */
@@ -263,7 +270,7 @@ body {
     }
 
     .menu-small {
-        background: #1b1919e3;
+        background: #292727;
         width: 100%;
         display: block;
         position: absolute;
