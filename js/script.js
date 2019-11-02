@@ -14,8 +14,8 @@
       if($(".menu-small").length == 0){
         console.log($(".menu-small").length)
         $(".header").append("<ul class='menu-small'>");
-        $(".menu-small").append("<li><a href='/projects/portfolio'>HOME</a></li>");
-        $(".menu-small").append("<li><a href='https://www.emares.ro/despre-mine/'>ABOUT</a></li>");
+        $(".menu-small").append("<li><a href='https://malhussaini.github.io/Portfolio/'>HOME</a></li>");
+        $(".menu-small").append("<li><a href=''>ABOUT</a></li>");
         $(".header").append("</ul>");
       }else {
         $(".menu-small").remove();
